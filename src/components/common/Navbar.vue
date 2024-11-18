@@ -2,7 +2,9 @@
 <template>
   <v-app-bar app color="green darken-3" dark dense>
     <v-app-bar-nav-icon />
-    <v-toolbar-title>초록내실</v-toolbar-title>
+    <v-toolbar-title>
+      <v-btn @click="navigateTo('/')" style="font-size: large;">초록내실</v-btn>
+    </v-toolbar-title>
     <v-spacer></v-spacer>
     <!-- 로그인 상태에 따라 다른 버튼 표시 -->
     <template v-if="userStore.isAuthenticated">
