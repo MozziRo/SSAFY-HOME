@@ -28,7 +28,7 @@ export default {
 <style scoped>
 .main-content {
   background: #f5f5f5;
-  padding: 20px;
+  padding: 0;
   min-height: 80vh;
   color: #333;
   font-family: 'Noto Sans KR', sans-serif;
