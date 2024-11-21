@@ -9,17 +9,18 @@
 </template>
 
 <script>
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
-import Navbar from './components/common/Navbar.vue';
-import AppFooter from './components/common/AppFooter.vue';
+import { computed } from "vue";
+import { useRoute } from "vue-router";
+import Navbar from "./components/common/Navbar.vue";
+import AppFooter from "./components/common/AppFooter.vue";
 
 export default {
   components: { Navbar, AppFooter },
   setup() {
     const route = useRoute();
-    const excludedRoutes = ['/login'];
+    const excludedRoutes = ["/login"];
     const showHeaderFooter = computed(() => !excludedRoutes.includes(route.path));
+
     return { showHeaderFooter };
   },
 };
@@ -31,6 +32,6 @@ export default {
   padding: 0;
   min-height: 80vh;
   color: #333;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 </style>
